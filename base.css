@@ -1,0 +1,84 @@
+ /*CSS per la gestione della scrollbar orizzontale*/             
+/* width */
+/*gestita come attributo del div*/
+div::-webkit-scrollbar {
+	height: 0px;
+	/*scrollbar orizzionatle: va usata height!*/
+}
+
+/* Track */
+div::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+div::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #5bc0de;
+  outline: 1px solid #5bc0de;
+}      
+
+div::-webkit-scrollbar:vertical {
+  display: none;
+}    
+
+/*disabilito lo scroll orizzontale*/
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+/*disabilito su smartphone il pull-to-refresh*/
+body {
+    overscroll-behavior: contain;
+}
+
+.toggle {
+  background-color: grey;
+  width: 120px;
+  height: 30px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.toggle-active {
+  background-color: blue;
+  width: 120px;
+  height:30px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+input {
+  display: none;
+}
+.slider {
+  height: 22px;
+  width: 60px;
+  background-color: white;
+  border-radius: 12px;
+  margin: 4px;
+}
+input:checked + .toggle {
+  background-color: #ffa500;
+}
+input:checked + .toggle > .slider {
+  align-self: flex-end;
+}
+
+
+.flex-container {
+  display: flex;
+ 
+}
+
+.flex-container > div {
+   
+}
+
+.tableRis{
+	font-size: 17px;
+    border-collapse: inherit !important;
+    border-spacing: 12px !important;
+}
