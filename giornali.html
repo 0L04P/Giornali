@@ -12,10 +12,28 @@
   <!--gestione bandiere-->
   <link rel="stylesheet" href="country-flag.css">
   <script src="country-flag.js"></script>
-  <script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
- 	<link rel="stylesheet" href="style.css" />
+ 
+	<link rel="stylesheet" href="magnific-popup.css"></script>
+	<script src='jquery.magnific-popup.js'></script>
+	<script>
+		$(document).ready(function() {
+			$('.giornale').magnificPopup({
+				delegate: 'a',
+				type: 'image',
+			 
+				mainClass: 'mfp-img-mobile',
+				gallery: {
+					enabled: true,
+					navigateByImgClick: true,
+					preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+				},
+
+			});
+		});
+	</script>
+
+
+<link rel="stylesheet" href="style.css" />
   <style>
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300&display=swap');
 </style>
@@ -149,11 +167,11 @@ img{
 					</div>
 				</div>	
 			</div>			
-			<div class="col-xs-12 giornale">								
-				<img src="PrimePagine\2.jpg" class="img" loading="lazy">	
+			<div class="col-xs-12 giornale"> 	
+				<a href="PrimePagine\2.jpg" ><img src="PrimePagine\2.jpg" class="img" loading="lazy"></a>	 			
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\2bis.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\2bis.jpg" ><img src="PrimePagine\2bis.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -198,7 +216,7 @@ img{
 				</div>	
 			</div>						
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\3.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\3.jpg" ><img src="PrimePagine\3.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 						<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -243,10 +261,10 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\4.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\4.jpg" ><img src="PrimePagine\4.jpg" class="img" loading="lazy"></a>		
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\4bis.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\4bis.jpg" ><img src="PrimePagine\4bis.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 						<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -291,7 +309,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\5.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\5.jpg" ><img src="PrimePagine\5.jpg" class="img" loading="lazy"></a>		
 			</div>	
 			
 			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -336,7 +354,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\6.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\6.jpg" ><img src="PrimePagine\6.jpg" class="img" loading="lazy"></a>		
 			</div>
 			
 						<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -381,10 +399,10 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\7.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\7.jpg" ><img src="PrimePagine\7.jpg" class="img" loading="lazy"></a>		
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\7bis.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\7bis.jpg" ><img src="PrimePagine\7bis.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 						<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -429,10 +447,10 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\8.png" class="img" loading="lazy">		
+				<a href="PrimePagine\8.jpg" ><img src="PrimePagine\8.jpg" class="img" loading="lazy"></a>		
 			</div>	
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\8bis.png" class="img" loading="lazy">	
+				<a href="PrimePagine\8bis.jpg" ><img src="PrimePagine\8bis.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 						<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -477,10 +495,10 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\9.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\9.jpg" ><img src="PrimePagine\9.jpg" class="img" loading="lazy"></a>			
 			</div>
 			
-						<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
+			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
 				<div class="col-xs-12 torneoFlex torneoFlex0 flex-container" style="margin-top: 5px; padding: 7px; white-space: nowrap; height: 160px;">
 					<div id="risFlex00" class="divRisultatoFlex" style="width:300px;">
 						<div class="row" style="padding-left: 24px; margin-top:10px;">
@@ -524,10 +542,10 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\10.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\10.jpg" ><img src="PrimePagine\10.jpg" class="img" loading="lazy"></a>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\10emezzo.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\10emezzo.jpg" ><img src="PrimePagine\10emezzo.jpg" class="img" loading="lazy"></a>		
 			</div>	
 			
 			<h3>2019 - L'anno del dominio di Alessandro</h3>
@@ -573,10 +591,10 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\11.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\11.jpg" ><img src="PrimePagine\11.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
-						<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
+			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
 				<div class="col-xs-12 torneoFlex torneoFlex0 flex-container" style="margin-top: 5px; padding: 7px; white-space: nowrap; height: 160px;">
 					<div id="risFlex00" class="divRisultatoFlex" style="width:300px;">
 						<div class="row" style="padding-left: 24px; margin-top:10px;">
@@ -618,16 +636,16 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\12.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\12.jpg" ><img src="PrimePagine\12.jpg" class="img" loading="lazy"></a>			
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\12.png" class="img" loading="lazy">	
+				<a href="PrimePagine\12.png" ><img src="PrimePagine\12.png" class="img" loading="lazy"></a>		
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\12bis.png" class="img" loading="lazy">		
+				<a href="PrimePagine\12bis.png" ><img src="PrimePagine\12bis.png" class="img" loading="lazy"></a>		
 			</div>	
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\12tris.png" class="img" loading="lazy">	
+				<a href="PrimePagine\12tris.png" ><img src="PrimePagine\12tris.png" class="img" loading="lazy"></a>	
 			</div>
 			
 						<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -672,13 +690,13 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\13.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\13.jpg" ><img src="PrimePagine\13.jpg" class="img" loading="lazy"></a>			
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\13bis.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\13bis.jpg" ><img src="PrimePagine\13bis.jpg" class="img" loading="lazy"></a>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\13emezzo.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\13emezzo.jpg" ><img src="PrimePagine\13emezzo.jpg" class="img" loading="lazy"></a>
 			</div>	
 
 			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -723,13 +741,13 @@ img{
 				</div>	
 			</div>			
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\14.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\14.jpg" ><img src="PrimePagine\14.jpg" class="img" loading="lazy"></a>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\14emezzo.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\14emezzo.jpg" ><img src="PrimePagine\14emezzo.jpg" class="img" loading="lazy"></a>
 			</div>
 			
-						<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
+			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
 				<div class="col-xs-12 torneoFlex torneoFlex0 flex-container" style="margin-top: 5px; padding: 7px; white-space: nowrap; height: 160px;">
 					<div id="risFlex00" class="divRisultatoFlex" style="width:300px;">
 						<div class="row" style="padding-left: 24px; margin-top:10px;">
@@ -773,10 +791,10 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\15.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\15.jpg" ><img src="PrimePagine\15.jpg" class="img" loading="lazy"></a>
 			</div>	
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\15bis.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\15bis.jpg" ><img src="PrimePagine\15bis.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 						<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -821,13 +839,13 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\16.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\16.jpg" ><img src="PrimePagine\16.jpg" class="img" loading="lazy"></a>		
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\16emezzo.png" class="img" loading="lazy">	
+				<a href="PrimePagine\16emezzo.jpg" ><img src="PrimePagine\16emezzo.jpg" class="img" loading="lazy"></a>
 			</div>
 			
-						<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
+			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
 				<div class="col-xs-12 torneoFlex torneoFlex0 flex-container" style="margin-top: 5px; padding: 7px; white-space: nowrap; height: 160px;">
 					<div id="risFlex00" class="divRisultatoFlex" style="width:300px;">
 						<div class="row" style="padding-left: 24px; margin-top:10px;">
@@ -869,10 +887,10 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\17.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\17.jpg" ><img src="PrimePagine\17.jpg" class="img" loading="lazy"></a>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\17bis.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\17bis.jpg" ><img src="PrimePagine\17bis.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -915,7 +933,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\18emezzo.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\18emezzo.jpg" ><img src="PrimePagine\18emezzo.jpg" class="img" loading="lazy"></a>
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -960,7 +978,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\19.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\19.jpg" ><img src="PrimePagine\19.jpg" class="img" loading="lazy"></a>	
 			</div>	
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1005,7 +1023,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\20.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\20.jpg" ><img src="PrimePagine\20.jpg" class="img" loading="lazy"></a>
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1050,7 +1068,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\21.jpeg" class="img" loading="lazy">		
+				<a href="PrimePagine\21.jpg" ><img src="PrimePagine\21.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1095,15 +1113,15 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\22.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\22.jpg" ><img src="PrimePagine\22.jpg" class="img" loading="lazy"></a>
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\22bis.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\22bis.jpg" ><img src="PrimePagine\22bis.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 			<h3>2020 - L'anno del'ascesa di Paolo</h3>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\22emezzo.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\22emezzo.jpg" ><img src="PrimePagine\22emezzo.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1148,10 +1166,10 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\23.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\23.jpg" ><img src="PrimePagine\23.jpg" class="img" loading="lazy"></a>
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\23bis.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\23bis.jpg" ><img src="PrimePagine\23bis.jpg" class="img" loading="lazy"></a>	
 			</div>	
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1282,7 +1300,7 @@ img{
 			<div style='height:20px;'></div>
 			<h3>2021 - L'anno della caduta del Muro</h3>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\26emezzo.png" class="img" loading="lazy">	
+				<a href="PrimePagine\26emezzo.jpg" ><img src="PrimePagine\26emezzo.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1327,7 +1345,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\27.png" class="img" loading="lazy">		
+				<a href="PrimePagine\27.jpg" ><img src="PrimePagine\27.jpg" class="img" loading="lazy"></a>
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1372,7 +1390,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\28.png" class="img" loading="lazy">	
+				<a href="PrimePagine\28.jpg" ><img src="PrimePagine\28.jpg" class="img" loading="lazy"></a>
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1417,7 +1435,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\29.png" class="img" loading="lazy">		
+				<a href="PrimePagine\29.jpg" ><img src="PrimePagine\29.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1462,7 +1480,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\30.png" class="img" loading="lazy">	
+				<a href="PrimePagine\30.jpg" ><img src="PrimePagine\30.jpg" class="img" loading="lazy"></a>
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1507,10 +1525,10 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\31.png" class="img" loading="lazy">		
+				<a href="PrimePagine\31.jpg" ><img src="PrimePagine\31.jpg" class="img" loading="lazy"></a>	
 			</div>	
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\31bis.png" class="img" loading="lazy">	
+				<a href="PrimePagine\31bis.jpg" ><img src="PrimePagine\31bis.jpg" class="img" loading="lazy"></a>
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1555,7 +1573,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\32.png" class="img" loading="lazy">		
+				<a href="PrimePagine\32.jpg" ><img src="PrimePagine\32.jpg" class="img" loading="lazy"></a>	
 			</div>
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1600,10 +1618,10 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\33.png" class="img" loading="lazy">	
+				<a href="PrimePagine\33.jpg" ><img src="PrimePagine\33.jpg" class="img" loading="lazy"></a>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\33_0.png" class="img" loading="lazy">		
+				<a href="PrimePagine\33_0.jpg" ><img src="PrimePagine\33_0.jpg" class="img" loading="lazy"></a>	
 			</div>			
 			
 			<div class='col-xs-12 torneoFlexflex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1648,7 +1666,7 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\34.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\34.jpg" ><img src="PrimePagine\340.jpg" class="img" loading="lazy"></a>
 			</div>
 			
 			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1693,12 +1711,12 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\35.png" class="img" loading="lazy">		
+				<a href="PrimePagine\35.jpg" ><img src="PrimePagine\35.jpg" class="img" loading="lazy"></a>		
 			</div>	
 			
 			<h3>2022 - L'anno delle lezioni</h3>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\35emezzo.png" class="img" loading="lazy">		
+				<a href="PrimePagine\35emezzo.jpg" ><img src="PrimePagine\35emezzo.jpg" class="img" loading="lazy"></a>
 			</div>	
 			
 			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
@@ -1743,13 +1761,13 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\36.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\36.jpg" ><img src="PrimePagine\36.jpg" class="img" loading="lazy"></a>
 			</div>
 			<div class="col-xs-12 giornale">		
-				<img src="PrimePagine\36bis.jpg" class="img" loading="lazy">	
+				<a href="PrimePagine\36bis.jpg" ><img src="PrimePagine\36bis.jpg" class="img" loading="lazy"></a>
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\36emezzo.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\36emezzo.jpg" ><img src="PrimePagine\36emezzo.jpg" class="img" loading="lazy"></a>	
 			</div>
 			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
 				<div class="col-xs-12 torneoFlex torneoFlex0 flex-container" style="margin-top: 5px; padding: 7px; white-space: nowrap; height: 160px;">
@@ -1793,8 +1811,212 @@ img{
 				</div>	
 			</div>
 			<div class="col-xs-12 giornale"  class="giornale">		
-				<img src="PrimePagine\37.jpg" class="img" loading="lazy">		
+				<a href="PrimePagine\37.jpg" ><img src="PrimePagine\37.jpg" class="img" loading="lazy"></a>	
 			</div>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
+				<div class="col-xs-12 torneoFlex torneoFlex0 flex-container" style="margin-top: 5px; padding: 7px; white-space: nowrap; height: 160px;">
+					<div id="risFlex00" class="divRisultatoFlex" style="width:300px;">
+						<div class="row" style="padding-left: 24px; margin-top:10px;">
+							<div class="col-xs-12">
+								<div class="col-xs-4 divRound NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill badgeRound">Castagna</span>
+								</div>
+								<div class="col-xs-4 divLive NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill">21/05/2022</span>
+								</div>
+								<div class="col-xs-4 divLive NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill badgeRound badgeRomano">XXXVIII</span>
+								</div>
+							</div>					
+							<table class="tableRis">
+								<tbody><tr>
+									<td style="padding-right: 10px;">
+										<div class="col-xs-2 col-sm-4 NoPad AlignRight" style="padding: 0;">
+											<label style="margin-left:-15px;"><div class="flag flag-it"></div></label>					
+										</div>
+									</td>					
+									<td class="giocatoreHome vincitore">Alessandro</td>
+									<td>6</td>  
+									<td>7</td>
+								</tr>
+								<tr>
+									<td style="padding-right: 10px;">
+									<div class="col-xs-2 col-sm-4 NoPad AlignRight" style="padding: 0;">
+											<label style="margin-left:-15px;"><div class="flag flag-it"></div></label>					
+										</div>
+									</td>
+									<td class="giocatoreAway" style="padding-left:10px;">Paolo</td>
+									<td>4</td>  
+									<td>6(4)</td>
+								</tr>
+							</tbody></table>						
+						</div>				
+					</div>
+				</div>	
+			</div>
+			<div class="col-xs-12 giornale"  class="giornale">		
+				<a href="PrimePagine\38.jpg" ><img src="PrimePagine\38.jpg" class="img" loading="lazy"></a>	
+			</div>
+			
+			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
+				<div class="col-xs-12 torneoFlex torneoFlex0 flex-container" style="margin-top: 5px; padding: 7px; white-space: nowrap; height: 160px;">
+					<div id="risFlex00" class="divRisultatoFlex" style="width:300px;">
+						<div class="row" style="padding-left: 24px; margin-top:10px;">
+							<div class="col-xs-12">
+								<div class="col-xs-4 divRound NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill badgeRound">Manesseno</span>
+								</div>
+								<div class="col-xs-4 divLive NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill">2/07/2022</span>
+								</div>
+								<div class="col-xs-4 divLive NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill badgeRound badgeRomano">XXXIX</span>
+								</div>
+							</div>					
+							<table class="tableRis">
+								<tbody><tr>
+									<td style="padding-right: 10px;">
+										<div class="col-xs-2 col-sm-4 NoPad AlignRight" style="padding: 0;">
+											<label style="margin-left:-15px;"><div class="flag flag-it"></div></label>					
+										</div>
+									</td>					
+									<td class="giocatoreHome vincitore">Alessandro</td>
+									<td>6</td>  
+									<td>6</td>
+								</tr>
+								<tr>
+									<td style="padding-right: 10px;">
+									<div class="col-xs-2 col-sm-4 NoPad AlignRight" style="padding: 0;">
+											<label style="margin-left:-15px;"><div class="flag flag-it"></div></label>					
+										</div>
+									</td>
+									<td class="giocatoreAway" style="padding-left:10px;">Paolo</td>
+									<td>0</td>  
+									<td>3</td>
+								</tr>
+							</tbody></table>						
+						</div>				
+					</div>
+				</div>	
+			</div>
+			<div class="col-xs-12 giornale"  class="giornale">		
+				<a href="PrimePagine\39.jpg" ><img src="PrimePagine\39.jpg" class="img" loading="lazy"></a>		
+			</div>
+			
+			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
+				<div class="col-xs-12 torneoFlex torneoFlex0 flex-container" style="margin-top: 5px; padding: 7px; white-space: nowrap; height: 160px;">
+					<div id="risFlex00" class="divRisultatoFlex" style="width:300px;">
+						<div class="row" style="padding-left: 24px; margin-top:10px;">
+							<div class="col-xs-12">
+								<div class="col-xs-4 divRound NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill badgeRound">Manesseno</span>
+								</div>
+								<div class="col-xs-4 divLive NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill">23/07/2022</span>
+								</div>
+								<div class="col-xs-4 divLive NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill badgeRound badgeRomano">XL</span>
+								</div>
+							</div>					
+							<table class="tableRis">
+								<tbody><tr>
+									<td style="padding-right: 10px;">
+										<div class="col-xs-2 col-sm-4 NoPad AlignRight" style="padding: 0;">
+											<label style="margin-left:-15px;"><div class="flag flag-it"></div></label>					
+										</div>
+									</td>					
+									<td class="giocatoreHome vincitore">Alessandro</td>
+									<td>6</td>  
+									<td>6</td>
+								</tr>
+								<tr>
+									<td style="padding-right: 10px;">
+									<div class="col-xs-2 col-sm-4 NoPad AlignRight" style="padding: 0;">
+											<label style="margin-left:-15px;"><div class="flag flag-it"></div></label>					
+										</div>
+									</td>
+									<td class="giocatoreAway" style="padding-left:10px;">Paolo</td>
+									<td>3</td>  
+									<td>2</td>
+								</tr>
+							</tbody></table>						
+						</div>				
+					</div>
+				</div>	
+			</div>
+			<div class="col-xs-12 giornale"  class="giornale">		
+				<a href="PrimePagine\40.jpg" ><img src="PrimePagine\40.jpg" class="img" loading="lazy"></a>		
+			</div>
+			
+			<h3>2023 - L'anno della speranza</h3>
+			<div class="col-xs-12 giornale"  class="giornale">		
+				<a href="PrimePagine\41.jpg" ><img src="PrimePagine\41.jpg" class="img" loading="lazy"></a>		
+			</div>
+			<div class='col-xs-12 torneoFlex flex-container' style='margin-top: 5px; padding: 7px; white-space: nowrap;  height: 160px; margin-bottom: 10px;'>
+				<div class="col-xs-12 torneoFlex torneoFlex0 flex-container" style="margin-top: 5px; padding: 7px; white-space: nowrap; height: 160px;">
+					<div id="risFlex00" class="divRisultatoFlex" style="width:300px;">
+						<div class="row" style="padding-left: 24px; margin-top:10px;">
+							<div class="col-xs-12">
+								<div class="col-xs-4 divRound NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill badgeRound">Castagna</span>
+								</div>
+								<div class="col-xs-4 divLive NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill">11/03/2023</span>
+								</div>
+								<div class="col-xs-4 divLive NoPad" style="padding: 0px 0px 0px 10px">
+									<span class="badge badge-pill badgeRound badgeRomano">XL</span>
+								</div>
+							</div>					
+							<table class="tableRis">
+								<tbody><tr>
+									<td style="padding-right: 10px;">
+										<div class="col-xs-2 col-sm-4 NoPad AlignRight" style="padding: 0;">
+											<label style="margin-left:-15px;"><div class="flag flag-it"></div></label>					
+										</div>
+									</td>					
+									<td class="giocatoreHome vincitore">Alessandro</td>
+									<td>6</td>  
+									<td>6</td>
+								</tr>
+								<tr>
+									<td style="padding-right: 10px;">
+									<div class="col-xs-2 col-sm-4 NoPad AlignRight" style="padding: 0;">
+											<label style="margin-left:-15px;"><div class="flag flag-it"></div></label>					
+										</div>
+									</td>
+									<td class="giocatoreAway" style="padding-left:10px;">Paolo</td>
+									<td>2</td>  
+									<td>3</td>
+								</tr>
+							</tbody></table>						
+						</div>				
+					</div>
+				</div>	
+			</div>
+			<div class="col-xs-12 giornale"  class="giornale">		
+				<a href="PrimePagine\41bis.jpg" ><img src="PrimePagine\41bis.jpg" class="img" loading="lazy"></a>				
+			</div>			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->			
 			
 			<h3>Extra</h3>
 			
@@ -1819,19 +2041,20 @@ img{
 			
 		</div>		
 	</div>
-	<script>
+	<!--script>
 	$(document).ready(function(){
+	/*
 $("img").fancybox({
 				'overlayShow'	: false,
 				'transitionIn'	: 'elastic',
 				'transitionOut'	: 'elastic'
-			});
-	}); 
+			}); */
+	});
 
 	function f(){
 		
 	} 
-	</script>
+	</script-->
 
 </body> 
 </html>
