@@ -2045,8 +2045,7 @@ img{
 
 	<script>
 		if('serviceWorker' in navigator) {
-			console.log(window.location.href)
-		  navigator.serviceWorker.register('/sw.js', { scope: '/' });
+			navigator.serviceWorker.register('/Giornali/sw.js', { scope: '/Giornali/' });
 		}
 	</script>
 
