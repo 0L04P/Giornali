@@ -1,4 +1,4 @@
-const CACHE_NAME = `Giornali-v1`;
+const CACHE_NAME = `Giornali-v2`;
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
