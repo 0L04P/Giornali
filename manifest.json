@@ -10,7 +10,7 @@
     "display": "fullscreen",
     "icons": [
         {
-            "src": "/Logo512.png",
+            "src": "/Giornali/Logo512.png",
             "sizes": "512x512"
         }
     ]
