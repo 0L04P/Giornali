@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Giornali",
+    "short_name": "Giornali",
+    "description": "Giornali",
+    "start_url": "/",
+    "background_color": "#16293c",
+    "theme_color": "#16293c",
+    "orientation": "any",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "/Logo512.png",
+            "sizes": "512x512"
+        }
+    ]
+}
