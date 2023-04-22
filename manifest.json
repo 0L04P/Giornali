@@ -3,7 +3,7 @@
     "name": "Giornali",
     "short_name": "Giornali",
     "description": "Giornali",
-    "start_url": "/giornali.html",
+    "start_url": "/Giornali/giornali.html",
     "background_color": "#16293c",
     "theme_color": "#16293c",
     "orientation": "any",
